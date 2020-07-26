@@ -1,30 +1,31 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../App.css';
+import { Link } from "react-router-dom";
 
 const HeaderComponent = (props) => {
   return (
     <nav class='navbar navbar-expand-sm bg-primary navbar-dark'>
       <ul class='navbar-nav'>
         <li class='nav-item active'>
-          <a class='nav-link' href='#'>
+          <Link  class='nav-link' to='/home'>
             Home
-          </a>
+          </Link >
         </li>
         <li class='nav-item'>
-          <a class='nav-link' href='#'>
+          <Link class='nav-link' to='/projects'>
             Projects
-          </a>
+          </Link >
         </li>
         <li class='nav-item'>
-          <a class='nav-link' href='#'>
+          <Link  class='nav-link' to='/services'>
             Services
-          </a>
+          </Link >
         </li>
         <li class='nav-item'>
-          <a class='nav-link' href='#'>
+          <Link  class='nav-link' to='/contacts'>
             Contacts
-          </a>
+          </Link >
         </li>
       </ul>
     </nav>

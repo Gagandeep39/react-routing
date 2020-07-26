@@ -1,31 +1,31 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../App.css';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const HeaderComponent = (props) => {
   return (
-    <nav class='navbar navbar-expand-sm bg-primary navbar-dark'>
-      <ul class='navbar-nav'>
-        <li class='nav-item active'>
-          <Link  class='nav-link' to='/home'>
+    <nav className='navbar navbar-expand-sm bg-primary navbar-dark'>
+      <ul className='navbar-nav'>
+        <li className='nav-item'>
+          <NavLink exact activeClassName='active'  className='nav-link' to='/'>
             Home
-          </Link >
+          </NavLink >
         </li>
         <li class='nav-item'>
-          <Link class='nav-link' to='/projects'>
+          <NavLink activeClassName='active' className='nav-link' to='/projects'>
             Projects
-          </Link >
+          </NavLink >
         </li>
         <li class='nav-item'>
-          <Link  class='nav-link' to='/services'>
+          <NavLink activeClassName='active'  className='nav-link' to='/services'>
             Services
-          </Link >
+          </NavLink >
         </li>
         <li class='nav-item'>
-          <Link  class='nav-link' to='/contacts'>
+          <NavLink  activeClassName='active'  className='nav-link' to='/contacts'>
             Contacts
-          </Link >
+          </NavLink >
         </li>
       </ul>
     </nav>

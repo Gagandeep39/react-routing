@@ -8,7 +8,7 @@ export default class RootComponent extends Component {
       <div>
         <HeaderComponent />
         <div className='row'>
-          <div className='col d-flex justify-content-center'>
+          <div>
             {this.props.children}
           </div>
         </div>

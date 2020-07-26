@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const HomeComponent = (props) => {
   return (
-    <div>
+    <div  className='col d-flex justify-content-center'>
       <h1>You chose <span class="badge badge-primary">Home</span></h1>
     </div>
   );

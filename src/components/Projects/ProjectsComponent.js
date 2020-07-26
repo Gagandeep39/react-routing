@@ -4,7 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 class ProjectsComponent extends Component {
   render() {
     return (
-      <h1>You chose <span class="badge badge-primary">Projects</span></h1>
+      <div className='col d-flex justify-content-center'>
+        <h1>You chose <span class='badge badge-primary'>Projects</span></h1>
+      </div>
     );
   }
 }
